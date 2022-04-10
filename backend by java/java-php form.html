@@ -1,0 +1,46 @@
+<p>Start typing a name in the input field below:</p>
+<p>Input showing by PHP without loading:<span id="txtHint"></span></p>
+
+<form id="myForm" action="" method="get">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br><br>
+  <input type="button" onsubmit="myFunction()" value="Submit">
+</form>
+
+<script>
+
+function myFunction() {
+  var f_name=document.forms["myForm"]["fname"].value;
+   var l_name=document.forms["myForm"]["lname"].value;
+
+  // document.getElementById("txtHint").innerHTML=f_name+" "+l_name;
+ 
+   const xmlhttp = new XMLHttpRequest();
+    xmlhttp.onload = function() {
+      document.getElementById("txtHint").innerHTML = this.responseText;
+    }
+  xmlhttp.open("GET", "form_pro.php?fname="+f_name+"&lname="+l_name);
+  xmlhttp.send();
+  //document.getElementById("myForm").submit();
+}
+
+
+function sub() {
+
+   var f_name=document.forms["myForm"]["fname"].value;
+   var l_name=document.forms["myForm"]["lname"].value;
+
+   if (f_name=="" && l_name=="") {
+    document.getElementById("txtHint").innerHTML = "";
+    return;
+  } else {
+
+    const xmlhttp = new XMLHttpRequest();
+    xmlhttp.onload = function() {
+      document.getElementById("txtHint").innerHTML = this.responseText;
+    }
+  xmlhttp.open("GET", "form_pro.php?f="+f_name);
+  xmlhttp.send();
+  }
+}
+</script>

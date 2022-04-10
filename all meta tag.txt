@@ -1,0 +1,12 @@
+<meta name="title" content="Techno Vedant">
+<meta name="description" content="This is one of the best Blogs for free Tips and Tricks tutorials about Android, iOS Apple, YouTube, Facebook, Whatsapp, Blogger, SEO Tips & much more.">
+<meta name="keywords" content="techno vedant, android, ios, apple, youtube, facebook, whatsapp, blogger, seo, tips">
+<meta name="robots" content="index, follow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="English">
+<meta name="revisit-after" content="15 days">
+<meta name="author" content="Techno Vedant">
+
+
+Meta Tag Code (Title: 70 Characters
+Description: 150 Characters)

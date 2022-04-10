@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+      <head>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      </head>
+<body>
+
+
+
+<script type="text/javascript">
+      var emp1={};
+      emp1.id=12;
+      emp1.name="Asad";
+      emp1.addr="Dhaka";
+      console.log(emp1);
+      $.ajax({
+            url:"readjson.php",
+            method:"post",
+            data:JSON.stringify(emp1),
+            success:function(res) {
+                  console.log(res);
+            }
+      })
+</script>
+
+</body>
+
+</html>
+

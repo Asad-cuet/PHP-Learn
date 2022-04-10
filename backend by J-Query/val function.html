@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#submit").click(function(){
+    var name=$("#test").val();
+    document.getElementById("name").innerHTML=name;
+  });
+});
+</script>
+</head>
+<body>
+
+<p>Name: <input type="text" id="test" required></p>
+
+<input type="submit" id="submit">
+
+<p id="name"></p>
+
+</body>
+</html>
